@@ -11,21 +11,12 @@
 		body { margin:0; padding:0; overflow:hidden; }
 		#flashContent { width:100%; height:100%; }
 		</style>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142454637-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-142454637-1');
-</script>
 
 	</head>
 	<body>
 		<div id="flashContent">
 			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="100%" height="100%" id="Title name that will appear on tab" align="middle">
-				<param name="movie" value="games/Bloons-Tower-Defense-5.swf" />
+				<param name="movie" value="test.swf" />
 				<param name="quality" value="high" />
 				<param name="bgcolor" value="#000000" />
 				<param name="play" value="true" />
@@ -38,7 +29,7 @@
 				<param name="allowScriptAccess" value="sameDomain" />
 				<!--[if !IE]>-->
 				<object type="application/x-shockwave-flash" data="games/Bloons-Tower-Defense-5.swf" width="100%" height="100%">
-					<param name="movie" value="games/Bloons-Tower-Defense-5.swf" />
+					<param name="movie" value="test.swf" />
 					<param name="quality" value="high" />
 					<param name="bgcolor" value="#000000" />
 					<param name="play" value="true" />
@@ -66,7 +57,7 @@ import flash.events.Event;
 
 function startLoad() {
     var mLoader:Loader = new Loader();
-    var mRequest:URLRequest = new URLRequest("games/Bloons-Tower-Defense-5.swf");
+    var mRequest:URLRequest = new URLRequest("test.swf");
     mLoader.contentLoaderInfo.addEventListener(Event.COMPLETE, onCompleteHandler);
     mLoader.load(mRequest);
 }
